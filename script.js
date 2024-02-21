@@ -1,5 +1,9 @@
 function stringChop(str, size) {
-  const myArray = str.split(" ", size);
+  const myArray=[];
+    for (let i=0;i<str.length;i+=size) {
+        myArray.push(str.slice(i,i+size));
+    }
+    return myArray;
 }
 
 // Do not change the code below
